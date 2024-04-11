@@ -1,0 +1,39 @@
+<!-- html to display on the page, just a form that for the user to fill out to create an account-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>U Buy U Sell</title>
+</head>
+<body>
+    <div class="indexHeadingDiv">
+        <h1 class="indexHeading"> Sign Up for U Buy U Sell </h1>
+    </div>
+    <div class="signupContainer">
+        <h1 class="signupH1"> Enter The Following </h1>
+        <form onsubmit="return checkPassword(this)" action="../php/newUser.php" method="post">
+            <div style="text-align: center;">
+                <input class="signupInput" maxlength="30" pattern="[a-zA-Z]{1,30}" name="fName" type="text" placeholder="First Name" required>
+                <input class="signupInput" maxlength="30" pattern="[a-zA-Z]{1,30}" name="lName" type="text" placeholder="Last Name" required>
+                <input class="signupInput" maxlength="50" name="email" type="email" placeholder="Email" required>
+                <input class="signupInput" minlength="5" maxlength="30"  name="usr" type="text" placeholder="Username" required>
+                <input class="signupInput" minlength="8" name="pwd1" type="password" placeholder="Password" required>
+                <input class="signupInput" minlength="8" name="pwd2"type="password"  placeholder="Confirm Password" required>
+                <span id='message'></span>
+                <br>
+                <br>
+                <button id="submit" class="buttonsGrey" type="submit"> Confirm </button>
+                <br>
+                <br>
+                <a href="../index.html"> Back to Main</a>
+            </div>
+        </form>
+    </div>  
+
+    <script src="../js/signUp.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!-- html to display general index page-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>U Buy U Sell</title>
+</head>
+<body>
+    <div class="indexHeadingDiv">
+        <h1 class="indexHeading"> Welcome to U Buy U Sell </h1>
+    </div>
+    <div class="loginFormContainer">
+        <h1 class="loginHeading"> Login </h1>
+        <form action="php/login.php" method="post">
+                <input class="loginInput" minlength="5" maxlength="30" type="text" name="usr" placeholder="Enter Username">
+                <input class="loginInput" minlength="5" type="password" name="pwd" placeholder="Enter Password">
+            <div style="text-align: center;">
+                <br>
+                <button class="buttonsGrey" type="submit"> Confirm </button>
+                <br>
+                <br>
+                <p> Forgot Login Info?  <a href="html/contact.html"> Click here</a></p>
+            </div>
+        </form>
+        <h2 class="loginH2"> or </h2>
+        <br>
+        <div style="text-align: center;">
+            <button class="buttonsGrey" onclick="location.href='html/signup.html';"> Create Account </button>
+        </div>     
+    </div>
+    
+</body>
+</html>
